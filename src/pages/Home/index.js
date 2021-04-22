@@ -34,7 +34,7 @@ const Home = () => {
                 {dataBlog.map(blog => {
                     return <BlogItem 
                     key={blog._id} 
-                    image={`http://localhost:4000/${blog.image}`} 
+                    image={`https://api-blogkev-deploy.herokuapp.com/${blog.image}`} 
                     title={blog.title} 
                     name={blog.author.name} 
                     date={blog.createAt} 
