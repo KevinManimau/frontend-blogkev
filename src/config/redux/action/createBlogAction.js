@@ -14,7 +14,7 @@ export const postToAPI = (form) => {
         data.append('body', form.body);
         data.append('image', form.image);
 
-    Axios.post('http://localhost:4000/v1/blog/post', data, {
+    Axios.post('https://api-blogkev-deploy.herokuapp.com/v1/blog/post', data, {
         headers: {
             'content-type': 'multipart/form-data'
         }
